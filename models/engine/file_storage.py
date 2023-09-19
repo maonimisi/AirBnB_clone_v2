@@ -49,7 +49,7 @@ class FileStorage:
         except FileNotFoundError:
             pass
 
-     def delete(self, obj=None):
+    def delete(self, obj=None):
         """delete specific object from FileStorage.__objects if obj exists"""
         if obj is None:
             return
