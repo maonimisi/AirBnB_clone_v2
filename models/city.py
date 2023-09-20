@@ -4,7 +4,7 @@ from sqlalchemy import String, DateTime, Column, ForeignKey
 from sqlalchemy.orm import relationship
 from models.base_model import BaseModel, Base
 
-class City(BaseModel):
+class City(BaseModel, Base):
     """This is the class for City
     Attributes:
         state_id: The state id

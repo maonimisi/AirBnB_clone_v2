@@ -7,7 +7,6 @@ import models
 from models.base_model import BaseModel, Base
 from models.city import City
 
-Base = declarative_base()
 
 class State(BaseModel, Base):
     """This is the class for State

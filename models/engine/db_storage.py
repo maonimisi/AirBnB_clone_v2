@@ -1,19 +1,17 @@
 #!/usr/bin/python3
 """Handles database storage using mysql"""
 
+import datetime
 from os import getenv
-import models
+from sqlalchemy.orm import sessionmaker, scoped_session
+from sqlalchemy import create_engine
 from models.base_model import BaseModel, Base
 from models.user import User
-from models.city import City
-from models.place import Place
 from models.state import State
+from models.city import City
 from models.amenity import Amenity
+from models.place import Place
 from models.review import Review
-import sqlalchemy
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, scoped_session
-
 
 class DBStorage:
     """Database storage engine"""
