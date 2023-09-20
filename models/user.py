@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """This module defines a class User"""
 from models.base_model import BaseModel, Base
-from sqlalchemy import Column, String, DateTime, ForeignKey
+from sqlalchemy import String, DateTime, Column, ForeignKey
 from sqlalchemy.orm import relationship
 
 
@@ -12,7 +12,7 @@ class User(BaseModel, Base):
         email - email address
         password - password for login
         first name -  first name
-        last nae - last name
+        last name - last name
     """
     __tablename__ = 'users'
 
