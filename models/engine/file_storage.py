@@ -54,8 +54,9 @@ class FileStorage:
         if obj is None:
             return
         key = obj.__class__.__name__ + '.' + obj.id
-        if key in self.__objects:
-            del self.__objects[key]
+        if (key, obj) in self.__objects.items():
+            del self.__objects[key] #modification
+        self.save()
 
     def close(self):
         """reloads saved objects"""
