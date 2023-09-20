@@ -36,7 +36,7 @@ class DBStorage:
                                       pool_pre_ping=True)
 
         if HBNB_ENV == "test":
-            Base.metadata.drop_all(self.__engine)
+            Base.metadata.drop_all(bind=self.__engine) #addition to this line
 
     def all(self, cls=None):
         """Query all objects on database or cls instance only if specified"""
