@@ -8,6 +8,7 @@ import os
 from datetime import datetime
 from fabric.api import local
 
+
 def do_pack():
     """ Create a .tgz archive from the content of web_static"""
     date = datetime.now().strftime("%Y%m%d%H%M%S")
