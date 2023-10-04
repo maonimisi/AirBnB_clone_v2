@@ -44,6 +44,7 @@ def do_deploy(archive_path):
         print(f"Error: {e}")
         return False
 
+
 def deploy():
     """Distributes an archive to your web servers"""
     archive_path = do_pack()
