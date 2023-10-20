@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
-def start_flask():
+def index():
     '''
     Function display “Hello HBNB!”
     '''
@@ -16,7 +16,7 @@ def start_flask():
 
 
 @app.route('/hbnb', strict_slashes=False)
-def redirect():
+def hbnb():
     '''
     Function display “HBNB!”
     '''
